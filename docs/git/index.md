@@ -6,6 +6,7 @@
 
 	保存到暂存区: git add .<文件名, . 代表所有>
 	提交本地仓库: git commit -m "备注"
+	提交至远程仓库: git push origin<指定远程仓库> master<远程分支名>
 
 ### 2. 分支管理
 
