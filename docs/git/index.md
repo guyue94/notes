@@ -20,6 +20,7 @@
 	git commit --amend
 
 #### 修改老旧commit的message
+
 	1. git rebase -i id<准备修改commit的父级commit id>
 	2. 修改pick为reword或者r, 保存
 	3. 修改message, 保存
@@ -61,5 +62,3 @@
 	查看stash: git stash list
 	恢复工作区更改: git stash apply(保留stash list)
 	恢复工作区更改: git stash pop(不保留stash list)
-
-	
