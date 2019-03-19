@@ -63,3 +63,8 @@
 	查看stash: git stash list
 	恢复工作区更改: git stash apply(保留stash list)
 	恢复工作区更改: git stash pop(不保留stash list)
+
+### 8. git仓库备份到本地
+
+	本地备份: git clone --bare file:///Users/lemon/notes/.git note.git < --bare: 不拷贝工作区>
+	创建桥梁: git remote add local file:///Users/lemon/git-backup/note.git
