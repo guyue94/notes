@@ -10,8 +10,9 @@
 
 ### 2. 分支管理
 
-	新建分支: git checkout -b branchName<分支名称>< -b, 直接切换 >
+	新建分支: git checkout -b branchName<分支名称>< -b, 直接切换 > <远程分支, 可选, 创建关联>
 	切换分支: git checkout branchName<分支名称>
+	查看分支: git branch -av
 	删除分支: git branch -d(-D) branchName<分支名称>
 
 ### 3. commit操作
@@ -68,3 +69,16 @@
 
 	本地备份: git clone --bare file:///Users/lemon/notes/.git note.git < --bare: 不拷贝工作区>
 	创建桥梁: git remote add local file:///Users/lemon/git-backup/note.git
+
+### 9. 图形化界面
+
+	gitk --all
+
+### 10. github的远程同步
+
+	git remote -v github <ssh地址>
+	git fetch github master
+	git merge github/master --allow-unrelated-histories
+	git push github master
+
+	
